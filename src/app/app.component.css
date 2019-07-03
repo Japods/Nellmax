@@ -17,10 +17,10 @@
 .hover:hover {
     color:#494c46;
     border: 1px solid blueviolet;
-    border-radius: 69px 69px 69px 69px;
+    border-radius: 10px 10px 10px 10px;
     background-color: #df81cd;
     transition: 0.4s;
-    transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
 }
