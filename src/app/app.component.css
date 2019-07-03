@@ -1,0 +1,26 @@
+ .navbar {
+     height: 70px;
+
+}
+
+.btnNav {
+    min-width: 576px;
+}
+
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    size: 15px;
+    color: blueviolet
+}
+
+.hover:hover {
+    color:#494c46;
+    border: 1px solid blueviolet;
+    border-radius: 69px 69px 69px 69px;
+    background-color: #df81cd;
+    transition: 0.4s;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+}

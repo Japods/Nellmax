@@ -1,16 +1,31 @@
-<div class="nav-bar">
-  <div class="row">
-    <div class="col-md-8">
-      <span>Nellmax</span>
-    </div>
-    <div class="col-md-4">
-      <div class="row">
-        <div class="col-md-3">Inicio</div>
-        <div class="col-md-3">Trabajo</div>
-        <div class="col-md-3">Nosotros</div>
-        <div class="col-md-3">Contacto</div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+  <div class="container">
+  <a class="navbar-brand" href="#">Nellmax</a>
+    <button id="btnNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  
+  
+  <div class="container" id="cntr">
+    <div class="navbar-collapse collapse justify-content-end"  id="navBar" >
+      <ul class="nav navbar-nav">
+        <li class="hover">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="hover">
+          <a class="nav-link" id="nbv-2" href="#">Trabajos</a>
+        </li>
+        <li class="hover">
+          <a class="nav-link" id="nbv-3" href="#">Nosotros</a>
+        </li>
+        <li class="hover">
+          <a class="nav-link" id="nbv-4" href="#">Contacto</a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 <router-outlet></router-outlet>
+
+
