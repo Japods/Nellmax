@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
   <div class="container">
   <a class="navbar-brand" id="branddy" routerLink="#">Nellmax</a>
     <button id="btnNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +26,7 @@
     </div>
   </div>
 </nav>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -52,7 +53,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="container">
+
+<section>
+  <div class="container">
   <span class="navbar-brand">Nosotros </span>
   <div class="row">
 
@@ -71,8 +74,14 @@
       <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 8px" width="450px" height="300px" alt="">
     </div>
   </div>
-</div>
-<div class="container">
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <span class="navbar-brand">Trabajos</span>
-</div>
+  </div>
+</section>
+  
+
 <router-outlet></router-outlet>
