@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 .carrousel{
     height: calc(100vh - 70px);
-=======
+}
  .navbar {
-     height: 70px;
+    height: 70px;
+    overflow: hidden;
 
 }
 
@@ -11,26 +11,23 @@
     min-width: 576px;
 }
 
+.rectangle_desing{
+    border: 20px solid #400D45;
+    position: absolute;
+    width: 75%;
+    height: 250px;
+}
+
+
 .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
     size: 15px;
-    color: blueviolet
+    color: #400D45
 }
 
-.hover:hover {
-    color:#494c46;
-    border: 1px solid blueviolet;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #df81cd;
-    transition: 0.4s;
-    transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-}
 
  #nbv-1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
->>>>>>> 74ed7dee9e009fac9e25f8d8a322378e5e03282e
 }

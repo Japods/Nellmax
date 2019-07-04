@@ -1,14 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
   <div class="container">
-  <a class="navbar-brand" routerLink="#">Nellmax</a>
-    <button id="btnNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" routerLink="#">Nellmax</a>
+    <button id="btnNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-  
-  
   <div class="container" id="cntr">
-    <div class="navbar-collapse collapse justify-content-end"  id="navBar" >
+    <div class="navbar-collapse collapse justify-content-end" id="navBar">
       <ul class="nav navbar-nav">
         <li class="hover">
           <a class="nav-link" id="nbv-1" routerLink="#">Inicio <span class="sr-only">(current)</span></a>
@@ -25,21 +24,54 @@
       </ul>
     </div>
   </div>
-</div>
-<div class="carrousel">
-  <i class="fa fa-angle-left" (click)="changeManualCarrousel(0)"
-    style="color: #FFF;position: absolute;left: 0;top: 90px;font-size: 30px;cursor: pointer" aria-hidden="true"></i>
-
-  <img class="image-carrousel" *ngIf="changeTab == 0" src="../assets/nellmax_1.jpg" width="100%" height="100%" alt="">
-  <img class="image-carrousel" *ngIf="changeTab == 1" src="../assets/nellmax_2.jpg" width="100%" height="100%" alt="">
-  <img class="image-carrousel" *ngIf="changeTab == 2" src="../assets/nellmax_3.jpg" width="100%" height="100%" alt="">
-
-  <i class="fa fa-angle-right" (click)="changeManualCarrousel(1)"
-    style="color: #FFF;position: absolute;right: -280px;top: 90px;font-size: 30px;cursor: pointer"
-    aria-hidden="true"></i>
-</div>
-<router-outlet></router-outlet>
 </nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carrousel">
+    <div class="carousel-item active animated fadeIn">
+      <img src="../assets/nellmax_1.jpg" class="carrousel w-100 animated fadeIn" alt="...">
+    </div>
+    <div class="carousel-item animated fadeIn">
+      <img src="../assets/nellmax_2.jpg" class="carrousel w-100 animated fadeIn" alt="...">
+    </div>
+    <div class="carousel-item animated fadeIn">
+      <img src="../assets/nellmax_3.jpg" class="carrousel w-100 animated fadeIn" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container">
+  <span class="navbar-brand">Nosotros </span>
+  <div class="row">
+
+    <div class="col-md-4">
+      <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 8px" width="450px" height="300px" alt="">
+    </div>
+    <div class="col-md-8">
+      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer</span>
+    </div>
+    <div class="col-md-8">
+      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer</span>
+    </div>
+    <div class="col-md-4">
+      <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 8px" width="450px" height="300px" alt="">
+    </div>
+  </div>
+</div>
+<div class="container">
+    <span class="navbar-brand">Trabajos</span>
+</div>
 <router-outlet></router-outlet>
-
-
