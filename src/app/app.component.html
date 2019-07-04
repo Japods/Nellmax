@@ -13,4 +13,16 @@
     </div>
   </div>
 </div>
+<div class="carrousel">
+  <i class="fa fa-angle-left" (click)="changeManualCarrousel(0)"
+    style="color: #FFF;position: absolute;left: 0;top: 90px;font-size: 30px;cursor: pointer" aria-hidden="true"></i>
+
+  <img class="image-carrousel" *ngIf="changeTab == 0" src="../assets/nellmax_1.jpg" width="100%" height="100%" alt="">
+  <img class="image-carrousel" *ngIf="changeTab == 1" src="../assets/nellmax_2.jpg" width="100%" height="100%" alt="">
+  <img class="image-carrousel" *ngIf="changeTab == 2" src="../assets/nellmax_3.jpg" width="100%" height="100%" alt="">
+
+  <i class="fa fa-angle-right" (click)="changeManualCarrousel(1)"
+    style="color: #FFF;position: absolute;right: -280px;top: 90px;font-size: 30px;cursor: pointer"
+    aria-hidden="true"></i>
+</div>
 <router-outlet></router-outlet>
