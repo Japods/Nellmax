@@ -1,37 +1,67 @@
-.carrousel{
-    height: calc(100vh - 70px);
-}
- .navbar {
-    height: 70px;
-    overflow: hidden;
-
+.carrousel {
+  height: calc(100vh - 70px);
 }
 
-.btnNav {
-    min-width: 576px;
+.navbar {
+  height: 70px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
 }
 
-.rectangle_desing{
-    border: 20px solid #400D45;
-    position: absolute;
-    width: 75%;
-    height: 250px;
+.rectangle_desing {
+  border: 20px solid #400D45;
+  position: absolute;
+  width: 75%;
+  height: 250px;
 }
 
 
 .navbar-brand {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-    size: 15px;
-    color: #400D45
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  size: 15px;
+  color: #400D45;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 
- #nbv-1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+#navBar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
 }
 
-section:nth-child(2){
-    
+span {
+  align-content: center
 }
+
+section h4 {
+  text-align: center;
+}
+
+
+section {
+  margin-bottom: 300px;
+  margin-top: 40px;
+
+}
+
+li:hover {
+  box-shadow:0px -5px 0 #400D45 inset
+
+}
+
+.navy-animation li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  transition: all ease-in-out 0.3s;
+  
+}
+
+
+
+
