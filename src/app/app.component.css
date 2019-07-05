@@ -5,11 +5,6 @@
 .navbar {
   height: 70px;
   overflow: hidden;
-
-}
-
-.btnNav {
-  min-width: 576px;
 }
 
 .rectangle_desing {
@@ -25,14 +20,14 @@
   font-size: 35px;
   size: 15px;
   color: #400D45;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   margin-top: 50px;
 }
 
 
-#nbv-1 {
+#navBar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 span {
@@ -44,14 +39,14 @@ section h4 {
 }
 
 
-.divs {
-  margin-bottom: 500px;
-  margin-top: 500px;
+section {
+  margin-bottom: 300px;
+  margin-top: 40px;
 
 }
 
 li:hover {
-  border-bottom: 4px solid rgb(129, 27, 138);
+  border-bottom: 4px solid rgb(179, 46, 191);
 
 }
 
@@ -61,7 +56,9 @@ li:hover {
   text-align: center;
   width: 25%;
   height: 100%;
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out .1s;
 }
+
+
 
 

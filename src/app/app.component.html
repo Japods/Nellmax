@@ -1,32 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm p-3 mb-5 rounded" role="navigation">
-  <div class="container">
-    <a class="navbar-brand" id="branddy" routerLink="#">Nellmax</a>
-    <button id="btnNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Nellmax</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  </div>
-  <div class="container" id="cntr">
-    <div class="navbar-collapse collapse justify-content-end" id="navBar">
-      <div>
-        <ul class="nav navbar-nav navy-animation">
-          <li class="nav-item">
-            <a class="nav-link" id="nbv-1" routerLink="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nbv-1" routerLink="#">Trabajos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nbv-1" routerLink="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nbv-1" routerLink="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-
+  
+    <div class="collapse navbar-collapse" id="navBar">
+      <ul class="navbar-nav ml-auto navy-animation navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Contacto</a>
+        </li>
+      </ul>
     </div>
-  </div>
 </nav>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
