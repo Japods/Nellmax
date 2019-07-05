@@ -1,68 +1,67 @@
-.carrousel{
-    height: calc(100vh - 70px);
+.carrousel {
+  height: calc(100vh - 70px);
 }
- .navbar {
-    height: 70px;
-    overflow: hidden;
+
+.navbar {
+  height: 70px;
+  overflow: hidden;
 
 }
 
 .btnNav {
-    min-width: 576px;
+  min-width: 576px;
 }
 
-.rectangle_desing{
-    border: 20px solid #400D45;
-    position: absolute;
-    width: 75%;
-    height: 250px;
+.rectangle_desing {
+  border: 20px solid #400D45;
+  position: absolute;
+  width: 75%;
+  height: 250px;
 }
 
 
 .navbar-brand {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-    size: 15px;
-    color: #400D45;
-    margin-bottom: 35px;
-    margin-top: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  size: 15px;
+  color: #400D45;
+  margin-bottom: 35px;
+  margin-top: 50px;
 }
 
 
- #nbv-1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+#nbv-1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
 }
 
-span{
-    align-content: center
+span {
+  align-content: center
 }
 
 section h4 {
-    text-align: center;
+  text-align: center;
 }
 
 
-.divs{
-    margin-bottom: 500px;
-    margin-top: 500px;
+.divs {
+  margin-bottom: 500px;
+  margin-top: 500px;
 
-} 
+}
+
 li:hover {
-    border-bottom: 5px solid #400D45;
-    
-  }
+  border-bottom: 4px solid rgb(129, 27, 138);
 
-  .navy-animation li{
-    display: block;
-    float: left;
-    text-align: center;
-    width: 25%;
-    height: 100%;
-    transition: all ease-in-out .2s;
-  }
+}
 
-
-
+.navy-animation li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  transition: all ease-in-out .2s;
+}
 
 
