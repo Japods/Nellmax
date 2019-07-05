@@ -55,14 +55,15 @@
 
 <section>
   <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-    <span class="navbar-brand">Nosotros </span>
+    <span class="navbar-brand">Nosotros</span>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 8px" width="450px" height="350px" alt="">
+        <img src="../assets/nellmax_nosotros.jpg" class="img-square"alt="">
       </div>
-      <div class="container text-justify col-6 " data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container text-justify col-6 text-square " data-aos="zoom-in" data-aos-duration="1000">
         <h4><b>Lorem</b></h4>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
@@ -72,10 +73,12 @@
           explicabo maiores architecto numquam perspiciatis consectetur ad veniam voluptate eaque nisi in! Praesentium.
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
       </div>
+    </div>
+  </div>
 
-      <div class="d-none d-md-block col-12"></div>
-
-      <div class="text-justify container col-6" data-aos="zoom-in" data-aos-duration="2000">
+  <div class="container">
+    <div class="row">
+      <div class="text-justify container col-md-6 text-square" data-aos="zoom-in" data-aos-duration="2000">
         <h4><b>Lorem</b></h4>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
@@ -86,8 +89,8 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </p>
       </div>
-      <div class="col-6" data-aos="zoom-in" data-aos-duration="2000">
-        <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 8px" width="450px" height="300px" alt="">
+      <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000">
+        <img class="img-square" src="../assets/nellmax_nosotros.jpg" alt="">
       </div>
     </div>
   </div>
@@ -97,17 +100,18 @@
   <div class="circle">
     hi
   </div>
-  <div class="container" style="position: relative;  bottom: 80px;">
+  <div class="container">
     <span class="navbar-brand" style="color: white;">Trabajos</span>
     <div class="scroll-jobs">
       <div class="carrousel">
         <div class="row">
           <div class="col-md-4">
-            <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 8px" width="350" height="250px" alt="">
+            <img src="../assets/nellmax_nosotros.jpg" class="img-square-2" alt="">
           </div>
-          <div class="col-md-8">
-            <b>Lorem</b>
-            <p style="padding-left: 90px;padding-right: 90px;text-align: center;">Lorem Ipsum is simply dummy text of
+          <div class="col-md-8 p-text-config">
+            <h4><b>Lorem</b></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of
               the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
               consectetur adipisicing elit. Modi facilis, esse deserunt, exercitationem ullam reprehenderit quae fugiat
@@ -121,9 +125,23 @@
           </div>
         </div>
       </div>
+        <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light social-nav">
+        <ul class="social social-icons">
+          <li class="social-li"><a href="#" class="link linkedin social-select" target="_blank"><span class="fa fa-linkedin-square"></span></a></li>
+          <li class="social-li"><a href="#" class="link facebook social-select"><span class="fa fa-facebook-square"></span></a></li>
+          <li class="social-li"><a href="#" class="link twitter social-select"><span class="fa fa-twitter"></span></a></li>
+          <li class="social-li"><a href="#" class="link instagram social-select"><span class="fa fa-instagram"></span></a></li>
+          <li class="social-li"><a href="#" class="link gmail social-select"><span class="fa fa-envelope"></span></a></li>
+        </ul>
+      </nav>
+      </div>
+     
     </div>
   </div>
 </section>
+
+
 
 
 <router-outlet></router-outlet>
