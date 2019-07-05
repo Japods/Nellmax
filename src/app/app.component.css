@@ -5,6 +5,8 @@
 .navbar {
   height: 70px;
   overflow: hidden;
+  width: 100%;
+  text-align: center;
 }
 
 .rectangle_desing {
@@ -46,7 +48,7 @@ section {
 }
 
 li:hover {
-  border-bottom: 4px solid rgb(179, 46, 191);
+  box-shadow:0px -5px 0 #400D45 inset
 
 }
 
@@ -56,7 +58,8 @@ li:hover {
   text-align: center;
   width: 25%;
   height: 100%;
-  transition: all ease-in-out .1s;
+  transition: all ease-in-out 0.3s;
+  
 }
 
 
