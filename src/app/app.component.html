@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
   <a class="navbar-brand" href="#">Nellmax</a>
   <div class="navbar-header">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar"
@@ -55,14 +55,15 @@
 
 <section>
   <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-    <span class="navbar-brand">Nosotros </span>
+    <span class="navbar-brand">Nosotros</span>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
         <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 5px" width="450px" height="350px" alt="">
       </div>
-      <div class="container text-justify col-6 " data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container text-justify col-6 text-square " data-aos="zoom-in" data-aos-duration="1000">
         <h4><b>Lorem</b></h4>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
@@ -151,6 +152,8 @@
           </div>
         </div>
       </div>
+    
+     
     </div>
     <div class="jobsImage">
       <div class="row" *ngIf="step == 0">
@@ -196,8 +199,22 @@
         </div>
       </div>
     </div>
+   
   </div>
 </section>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light social-nav">
+    <ul class="social social-icons">
+      <li class="social-li"><a href="#" class="link linkedin social-select" target="_blank"><span class="fa fa-linkedin-square"></span></a></li> &nbsp;
+      <li class="social-li"><a href="#" class="link facebook social-select"><span class="fa fa-facebook-square"></span></a></li> &nbsp;
+      <li class="social-li"><a href="#" class="link twitter social-select"><span class="fa fa-twitter"></span></a></li> &nbsp;
+      <li class="social-li"><a href="#" class="link instagram social-select"><span class="fa fa-instagram"></span></a></li> &nbsp;
+      <li class="social-li"><a href="#" class="link gmail social-select"><span class="fa fa-envelope"></span></a></li> &nbsp;
+    </ul>
+  </nav>
+  </div>
+
+
 
 
 <router-outlet></router-outlet>

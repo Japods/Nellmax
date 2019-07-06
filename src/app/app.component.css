@@ -22,8 +22,8 @@
   font-size: 35px;
   size: 15px;
   color: #400D45;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 
@@ -38,6 +38,7 @@ span {
 
 section h4 {
   text-align: center;
+  overflow: hidden;
 }
 
 
@@ -60,7 +61,8 @@ section {
 }
 
 li:hover {
-  box-shadow:0px -5px 0 #400D45 inset
+  box-shadow:0px -5px 0 #400D45 inset;
+  text-shadow:0.1px 0.1px 0 rgb(0, 0, 0);
 
 }
 
@@ -76,6 +78,58 @@ li:hover {
 
 .jobsImage{
   margin-top: 60px;
+}
+.text-square {
+  margin-top: 50px;
+}
+
+.img-square {
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 50px;
+  width: 450px;
+  height: 300px; 
+}
+.img-square-2 {
+  border-radius: 8px;
+  margin-left: 0px;
+  margin-top: 30px;
+  width: 450px;
+  height: 300px; 
+}
+
+.p-text-config{
+  padding-left: 90px;
+  padding-right: 90px;
+  text-align: justify;
+}
+
+.social-select, .social-select:link {
+  color: white;
+  transition: all .25s ease;
+}
+.social-select:hover {
+  color: #400D45;
+}
+.social-icons {
+  color: #fff;
+  font-size: 30px;
+  margin: auto;
+}
+
+.social-nav {
+  border-radius: 50px;
+}
+
+.social-li {
+  background: gray;
+  display: inline-block;
+  line-height: 0;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
 }
 
 
