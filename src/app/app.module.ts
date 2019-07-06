@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from  '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+import { appService} from '../app/app.component.service';
 
 
 
@@ -16,9 +20,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule
 
   ],
-  providers: [],
+  providers: [appService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
