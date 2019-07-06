@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
-  <a class="navbar-brand" href="inicio">Nellmax</a>
+  <a class="navbar-brand" href="#">Nellmax</a>
   <div class="navbar-header">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -10,13 +10,13 @@
   <div class="collapse navbar-collapse" id="navBar">
     <ul class="navbar-nav ml-auto navy-animation">
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="inicio">Inicio</a>
+        <a class="nav-link" href="#">Inicio</a>
       </li>
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="nosotros">Nosotros</a>
+        <a class="nav-link" href="#">Nosotros</a>
       </li>
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="trabajos">Trabajos</a>
+        <a class="nav-link" href="#">Trabajos</a>
       </li>
       <li class="nav-item navbar-right">
         <a class="nav-link" href="#">Contacto</a>
@@ -25,7 +25,7 @@
   </div>
 </nav>
 
-<div name="inicio" id="carouselExampleIndicators" data-aos="zoom-in" data-aos-duration="2000" class="carousel slide"
+<div name="#" id="carouselExampleIndicators" data-aos="zoom-in" data-aos-duration="2000" class="carousel slide"
   data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -53,7 +53,7 @@
   </a>
 </div>
 
-<section name="nosotros">
+<section>
   <div class="container" data-aos="zoom-in" data-aos-duration="1000">
     <span class="navbar-brand">Nosotros</span>
   </div>
@@ -61,7 +61,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../assets/nellmax_nosotros.jpg" class="img-square"alt="">
+        <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 5px" width="450px" height="350px" alt="">
       </div>
       <div class="container text-justify col-6 text-square " data-aos="zoom-in" data-aos-duration="1000">
         <h4><b>Lorem</b></h4>
@@ -73,12 +73,7 @@
           explicabo maiores architecto numquam perspiciatis consectetur ad veniam voluptate eaque nisi in! Praesentium.
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
       </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="text-justify container col-md-6 text-square" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="text-justify container col-6" data-aos="zoom-in" data-aos-duration="2000">
         <h4><b>Lorem</b></h4>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
@@ -89,29 +84,65 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </p>
       </div>
-      <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000">
-        <img class="img-square" src="../assets/nellmax_nosotros.jpg" alt="">
+      <div class="col-6" data-aos="zoom-in" data-aos-duration="2000">
+        <img src="../assets/nellmax_nosotros.jpg" style="border-radius: 5px" width="450px" height="300px" alt="">
       </div>
     </div>
   </div>
 </section>
 
-<section name="trabajos" style="background-color: #400d45; color: white;">
+<section style="background-color: #400d45; color: white;">
   <div class="circle">
     hi
   </div>
-  <div class="container">
+  <div class="container" data-aos="zoom-in" data-aos-duration="2000" style="position: relative;  bottom: 80px;">
     <span class="navbar-brand" style="color: white;">Trabajos</span>
     <div class="scroll-jobs">
-      <div class="carrousel">
+      <div class="" align="center">
         <div class="row">
-          <div class="col-md-4">
-            <img src="../assets/nellmax_nosotros.jpg" class="img-square-2" alt="">
+          <div class="col-md-4 animated fadeIn" *ngIf="step == 0">
+            <img src="../assets/nellmax_nosotros.jpg" class="animated fadeIn" style="border-radius: 5px" width="350"
+              height="250px" alt="">
           </div>
-          <div class="col-md-8 p-text-config">
-            <h4><b>Lorem</b></h4>
-            <p>
-              Lorem Ipsum is simply dummy text of
+          <div class="col-md-8" *ngIf="step == 0">
+            <b>Lorem</b>
+            <p style="padding-left: 90px;padding-right: 90px;text-align: center;">Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Modi facilis, esse deserunt, exercitationem ullam reprehenderit quae fugiat
+              asperiores voluptas dolore quis. Quo nam ut debitis amet? Autem perspiciatis sequi cum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Quod, animi, doloribus officiis nihil tenetur voluptatibus at
+              quaerat
+              explicabo maiores architecto numquam perspiciatis consectetur ad veniam voluptate eaque nisi in!
+              Praesentium.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 animated fadeIn" *ngIf="step == 1">
+            <img src="../assets/nellmax_1.jpg" class="animated fadeIn" style="border-radius: 5px" width="350"
+              height="250px" alt="">
+          </div>
+          <div class="col-md-8" *ngIf="step == 1">
+            <b>Lorem</b>
+            <p style="padding-left: 90px;padding-right: 90px;text-align: center;">Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Modi facilis, esse deserunt, exercitationem ullam reprehenderit quae fugiat
+              asperiores voluptas dolore quis. Quo nam ut debitis amet? Autem perspiciatis sequi cum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Quod, animi, doloribus officiis nihil tenetur voluptatibus at
+              quaerat
+              explicabo maiores architecto numquam perspiciatis consectetur ad veniam voluptate eaque nisi in!
+              Praesentium.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-4 animated fadeIn" *ngIf="step == 2">
+            <img src="../assets/nellmax_2.jpg" class="animated fadeIn" style="border-radius: 5px" width="350"
+              height="250px" alt="">
+          </div>
+          <div class="col-md-8" *ngIf="step == 2">
+            <b>Lorem</b>
+            <p style="padding-left: 90px;padding-right: 90px;text-align: center;">Lorem Ipsum is simply dummy text of
               the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
               consectetur adipisicing elit. Modi facilis, esse deserunt, exercitationem ullam reprehenderit quae fugiat
@@ -126,11 +157,94 @@
         </div>
       </div>
     </div>
+    <div class="jobsImage">
+      <div class="row" *ngIf="step == 0">
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_2.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_2.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_2.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_2.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+      </div>
+      <div class="row" *ngIf="step == 1">
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_1.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_1.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_1.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_1.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+      </div>
+      <div class="row" *ngIf="step == 2">
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_3.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_3.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_3.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+        <div class="col-md-3 col5">
+          <img src="../assets/nellmax_3.jpg" class="animated fadeIn" style="border-radius: 5px" width="250"
+            height="150px" alt="">
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light social-nav">
+    <ul class="social social-icons">
+      <li class="social-li"><a href="#" class="link linkedin social-select" target="_blank"><span
+            class="fa fa-linkedin-square"></span></a></li> &nbsp;
+      <li class="social-li"><a href="#" class="link facebook social-select"><span
+            class="fa fa-facebook-square"></span></a></li> &nbsp;
+      <li class="social-li"><a href="#" class="link twitter social-select"><span class="fa fa-twitter"></span></a></li>
+      &nbsp;
+      <li class="social-li"><a href="#" class="link instagram social-select"><span class="fa fa-instagram"></span></a>
+      </li> &nbsp;
+      <li class="social-li"><a href="#" class="link gmail social-select"><span class="fa fa-envelope"></span></a></li>
+      &nbsp;
+    </ul>
+  </nav>
+</div>
 
-
-
+<section align="center" style="background-color: #cccccc; color: white;">
+  <div class="grandpa" align="center">
+      <div class="social-card">
+          <div class="form-group">
+            <input type="text" class="form-group" [(ngModel)]="name">
+            <input type="text" class="form-group" [(ngModel)]="reply_email">
+            <input type="text" class="form-group" [(ngModel)]="message">
+            <button (click)="sendForm()">Enviar</button>
+          </div>
+        </div>
+  </div>
+</section>
 
 
 
