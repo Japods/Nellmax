@@ -47,6 +47,17 @@ section {
 
 }
 
+.section-2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.section-3 {
+  background-color: darkmagenta;
+  height: 500px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .circle{
   height: 170px;
   width: 100%;
