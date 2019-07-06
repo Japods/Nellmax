@@ -131,7 +131,7 @@ li:hover {
 }
 
 .social-li {
-  background: gray;
+  background: rgb(132, 132, 132);
   display: inline-block;
   line-height: 0;
   padding: 10px;
