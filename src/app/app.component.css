@@ -55,6 +55,10 @@ section {
   bottom: 86px;
 }
 
+.col5{
+  width: calc(100% / 5);
+}
+
 li:hover {
   box-shadow:0px -5px 0 #400D45 inset
 
@@ -68,6 +72,10 @@ li:hover {
   height: 100%;
   transition: all ease-in-out 0.3s;
   
+}
+
+.jobsImage{
+  margin-top: 60px;
 }
 
 
