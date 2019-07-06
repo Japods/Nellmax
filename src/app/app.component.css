@@ -6,7 +6,10 @@
   height: 70px;
   overflow: hidden;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  z-index: 1;
+  align-content: center;
+
 }
 
 .rectangle_desing {
@@ -55,7 +58,7 @@ section {
 .titulo-2{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   vertical-align: auto;
-  
+
 }
 
 .circle {
@@ -159,3 +162,4 @@ li:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08),
     0 3px 1px -2px rgba(0, 0, 0, .2);
 }
+
