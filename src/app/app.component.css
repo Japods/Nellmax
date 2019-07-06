@@ -101,9 +101,7 @@ li:hover {
   color: white;
   transition: all .25s ease;
 }
-.social-select:hover {
-  color: #400D45;
-}
+
 .social-icons {
   color: #fff;
   font-size: 30px;
@@ -123,6 +121,11 @@ li:hover {
   text-align: center;
   width: 60px;
   height: 60px;
+}
+
+.body-modelo {
+  color: black;
+  text-align: justify;
 }
 
 
