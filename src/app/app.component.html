@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light top-fixed">
   <a class="navbar-brand" href="#">Nellmax</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="material-icons">reorder</i>
   </button>
   <div class="collapse navbar-collapse" id="navbarMenu">
@@ -20,7 +20,6 @@
     </ul>
   </div>
 </nav>
-
 <div name="carousel" id="carouselExampleIndicators" data-aos="zoom-in" data-aos-duration="2000" class="carousel slide"
   data-ride="carousel">
   <ol class="carousel-indicators">
@@ -213,9 +212,10 @@
   </div>
 </section>
 
+<section style="background-color: #400d45;">
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light social-nav">
-      <h2 class="titulo-2">Contacto</h2>
+      <h2 class="titulo-2">Contactanos!</h2>
     <ul class="social social-icons">
       <li class="social-li"><a href="#" class="link linkedin social-select" target="_blank"><span
             class="fa fa-linkedin-square"></span></a></li> &nbsp;
@@ -230,15 +230,19 @@
     </ul>
   </nav>
 </div>
+</section>
 
 <section class="section-2" align="center"  style="background-color: #cccccc; color: white;">
   <div class="grandpa" *ngIf="showBasic"  align="center">
       <div class="social-card">
           <div class="form-group">
-            <input type="text" class="form-group" [(ngModel)]="name">
-            <input type="text" class="form-group" [(ngModel)]="reply_email">
-            <input type="text" class="form-group" [(ngModel)]="message">
-            <button (click)="sendForm()">Enviar</button>
+            <h5>Nombre</h5>
+            <input type="text" class="form-control" [(ngModel)]="name">
+            <h5>Correo Electrionico</h5>
+            <input type="email" class="form-control" [(ngModel)]="reply_email" placeholder="correo@ejemplo.com">
+            <h5>Mensaje</h5>
+            <input type="text" class="form-control" [(ngModel)]="message"><hr />
+            <button type="submit" class="btn btn-success btn-lg" (click)="sendForm()">Enviar</button>
           </div>
         </div>
   </div>

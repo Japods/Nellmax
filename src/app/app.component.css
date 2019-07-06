@@ -3,13 +3,11 @@
 }
 
 .navbar {
-  height: 70px;
   overflow: hidden;
   width: 100%;
   text-align: left;
   z-index: 1;
   align-content: center;
-
 }
 
 .rectangle_desing {
@@ -22,11 +20,10 @@
 
 .navbar-brand {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 35px;
+  font-size: 40px;
   size: 15px;
   color: #400D45;
-  margin-bottom: 15px;
-  margin-top: 20px;
+  
 }
 
 
@@ -44,20 +41,17 @@ section h4 {
   overflow: hidden;
 }
 
-
-section {
-  margin-top: 40px;
-
-}
-
 .section-2 {
   margin-top: 0px;
   margin-bottom: 0px;
+  background-color: #400D45;
 }
 
 .titulo-2{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   vertical-align: auto;
+  padding-left: 50px;
+  font-size: 30px;
 
 }
 
@@ -130,10 +124,15 @@ li:hover {
   color: #fff;
   font-size: 30px;
   margin: auto;
+  align-items: center;
 }
 
 .social-nav {
   border-radius: 50px;
+  padding-bottom: 0px;
+  border-bottom: rgb(164, 156, 156);
+  margin-bottom: 25px;
+  background-color: #400D45;
 }
 
 .social-li {
@@ -153,13 +152,22 @@ li:hover {
 }
 
 .social-card {
-  padding: 10px;
+  color: black;
+  padding: 20px;
   margin-left: 20px;
   margin-top: 20px;
-  height: 300px;
-  width: 300px;
+  margin-bottom: 30px;
+  height: 340px;
+  width: 430px;
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08),
     0 3px 1px -2px rgba(0, 0, 0, .2);
+  overflow: hidden;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.grandpa{
+  background-color: #400D45;
 }
 
