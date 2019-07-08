@@ -120,6 +120,34 @@ li:hover {
   transition: all .25s ease;
 }
 
+#msnToggle {
+  border: solid 1px white;
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50px !important;
+  z-index: 40 !important;
+  outline: none;
+  cursor: pointer;
+  background-color: #400D45;
+  color: white
+}
+
+.chatSide{
+  position: fixed;
+  bottom: 90px;
+  right: 90px;
+  z-index: 40 !important;
+  background-color: white;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
 .social-icons {
   color: #fff;
   font-size: 30px;
@@ -128,7 +156,6 @@ li:hover {
 }
 
 .social-nav {
-  border-radius: 50px;
   padding-bottom: 0px;
   border-bottom: rgb(164, 156, 156);
   margin-bottom: 25px;

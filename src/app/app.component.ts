@@ -9,6 +9,7 @@ import { appService } from '../app/app.component.service';
 export class AppComponent {
 
   // tslint:disable-next-line: variable-name
+  public sendEmail: boolean = false;
   public showBasic: boolean = false;
   public carrousel_img = 0;
   public carrousel = 0;
@@ -53,6 +54,11 @@ export class AppComponent {
 
     changeBasic(){
       this.showBasic = !this.showBasic;
+    }
+
+  
+    showSendEmail(){
+      this.sendEmail = !this.sendEmail;
     }
 
 
