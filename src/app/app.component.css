@@ -19,7 +19,7 @@
 
 
 .navbar-brand {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 40px;
   size: 15px;
   color: #400D45;
@@ -63,6 +63,18 @@ section h4 {
   position: relative;
   bottom: 86px;
 }
+
+.circle-2 {
+  height: 170px;
+  width: 100%;
+  background: #400D45;
+  border-radius: 22%;
+  position: relative;
+  bottom: 86px;
+}
+
+
+
 
 .col5 {
   width: calc(100% / 5);
@@ -221,3 +233,26 @@ li:hover {
   background-color: #400D45;
 }
 
+.imagen-set {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+
+}
+
+.services-tittle {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 0;
+  color: #400D45
+
+}
+
+.services-body {
+  text-align: center;
+  border-top: 20px;
+}
+
+.text-body{
+  font-family: 'Quicksand', sans-serif;
+}
