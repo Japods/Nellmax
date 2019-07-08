@@ -124,7 +124,21 @@ li:hover {
   border: solid 1px white;
   position: fixed;
   bottom: 20px;
-  right: 90px;
+  right: 130px;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50px !important;
+  z-index: 40 !important;
+  outline: none;
+  cursor: pointer;
+  background-color: #400D45;
+  color: white
+}
+#cotizationToggle {
+  border: solid 1px white;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
   height: 60px !important;
   width: 60px !important;
   border-radius: 50px !important;
@@ -146,6 +160,15 @@ li:hover {
   border-radius: 5px;
 }
 
+.carrousel-text{
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+  width: 60%;
+  overflow: hidden;
+  color: gray;
+  left: 250px;
+}
 
 
 .social-icons {

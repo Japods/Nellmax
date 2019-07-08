@@ -9,6 +9,7 @@ import { appService } from '../app/app.component.service';
 export class AppComponent {
 
   // tslint:disable-next-line: variable-name
+  public sendCotization: boolean = false;
   public sendEmail: boolean = false;
   public showBasic: boolean = false;
   public carrousel_img = 0;
@@ -49,28 +50,81 @@ export class AppComponent {
     } else {
       this.step = this.step + 1;
     }
+    if (this.carrousel_img == 2) {
+      setTimeout(() => {
+        this.carrousel_img = 0
+      }, 3000);
+    } else {
+      this.carrousel_img = this.carrousel_img + 1;
+    }
 
   }
 
-    changeBasic(){
-      this.showBasic = !this.showBasic;
+  changeJobs(val: any) {
+    if (val == 0) {
+      this.step = this.step + 1;
+      if (this.step == 3) {
+        this.step = 0;
+      }
+    } else {
+      this.step = this.step - 1;
+      if (this.step == 0) {
+        this.step = 2;
+      }
     }
+  }
 
-  
-    showSendEmail(){
-      this.sendEmail = !this.sendEmail;
+
+  changeCarrousel(val: any) {
+    if (val == 0) {
+      this.carrousel_img = this.carrousel_img + 1;
+      if (this.carrousel_img == 3) {
+        this.carrousel_img = 0;
+      }
+    } else {
+      this.carrousel_img = this.carrousel_img - 1;
+      if (this.carrousel_img == 0) {
+        this.carrousel_img = 2;
+      }
     }
+  }
+
+  showPops(val: any) {
+    switch (val) {
+      case 0:
+        if (this.sendCotization == true) {
+          this.sendCotization = false;
+        }
+        this.sendEmail = !this.sendEmail;
+        break;
+      case 1:
+        if (this.sendEmail == true) {
+          this.sendEmail = false;
+        }
+        this.sendCotization = !this.sendCotization;
+
+        console.log("Send",this.sendCotization)
+
+        break;
+
+      default:
+        break;
+    }
+  }
 
 
-  sendForm(){
-   this.template_params.name = this.name
-   this.template_params.reply_email = this.reply_email
-   this.template_params.message = this.message;
-   console.log("This template params", this.template_params)
 
-   this.appService.sendEmail(this.service_id,this.template_id,this.user_id,this.template_params).subscribe(response => {
-    console.log("Response",response)
-   })
+
+
+  sendForm() {
+    this.template_params.name = this.name
+    this.template_params.reply_email = this.reply_email
+    this.template_params.message = this.message;
+    console.log("This template params", this.template_params)
+
+    this.appService.sendEmail(this.service_id, this.template_id, this.user_id, this.template_params).subscribe(response => {
+      console.log("Response", response)
+    })
   }
 
 
