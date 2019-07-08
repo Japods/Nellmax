@@ -1,31 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
-  <a class="navbar-brand" href="#">Nellmax</a>
-  <div class="navbar-header">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-
-  <div class="collapse navbar-collapse" id="navBar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#carouselExampleIndicators">Nellmax</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="material-icons">sort</i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarMenu">
     <ul class="navbar-nav ml-auto navy-animation">
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="#">Inicio</a>
+        <a class="nav-link" href="#carouselExampleIndicators">Inicio</a>
       </li>
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="#">Nosotros</a>
+        <a class="nav-link" href="#nosotros">Nosotros</a>
       </li>
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="#">Trabajos</a>
+        <a class="nav-link" href="#trabajos">Trabajos</a>
       </li>
       <li class="nav-item navbar-right">
-        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div name="#" id="carouselExampleIndicators" data-aos="zoom-in" data-aos-duration="2000" class="carousel slide"
+<div id="carouselExampleIndicators" data-aos="zoom-in" data-aos-duration="2000" class="carousel slide"
   data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -53,9 +49,9 @@
   </a>
 </div>
 
-<section>
+<section id="nosotros">
   <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-    <span class="navbar-brand">Nosotros</span>
+    <span class="navbar-brand" name="nosotros">Nosotros</span>
   </div>
 
   <div class="container">
@@ -91,11 +87,11 @@
   </div>
 </section>
 
-<section style="background-color: #400d45; color: white;">
+<section id="trabajos" style="background-color: #400d45; color: white;">
   <div class="circle">
     hi
   </div>
-  <div class="container" data-aos="zoom-in" data-aos-duration="2000" style="position: relative;  bottom: 80px;">
+  <div class="container" name="trabajos" data-aos="zoom-in" data-aos-duration="2000" style="position: relative;  bottom: 80px;">
     <span class="navbar-brand" style="color: white;">Trabajos</span>
     <div class="scroll-jobs">
       <div class="" align="center">
@@ -142,7 +138,7 @@
           </div>
           <div class="col-md-8" *ngIf="step == 2">
             <b>Lorem</b>
-            <p style="padding-left: 90px;padding-right: 90px;text-align: center;">Lorem Ipsum is simply dummy text of
+            <p style="padding-left: 90px;padding-right: 90px;text-align: justify;">Lorem Ipsum is simply dummy text of
               the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer Lorem ipsum dolor sit, amet
               consectetur adipisicing elit. Modi facilis, esse deserunt, exercitationem ullam reprehenderit quae fugiat
@@ -216,8 +212,11 @@
 
   </div>
 </section>
-<div class="container">
+
+<section id="contacto" style="background-color: #400d45;">
+<div class="container" >
   <nav class="navbar navbar-expand-lg navbar-light bg-light social-nav">
+      <h2 class="titulo-2">Contactanos!</h2>
     <ul class="social social-icons">
       <li class="social-li"><a href="#" class="link linkedin social-select" target="_blank"><span
             class="fa fa-linkedin-square"></span></a></li> &nbsp;
@@ -227,26 +226,27 @@
       &nbsp;
       <li class="social-li"><a href="#" class="link instagram social-select"><span class="fa fa-instagram"></span></a>
       </li> &nbsp;
-      <li class="social-li"><a href="#" class="link gmail social-select"><span class="fa fa-envelope"></span></a></li>
+      <li class="social-li"><a href="#" (click)="changeBasic()"  class="link gmail social-select"><span class="fa fa-envelope"></span></a></li>
       &nbsp;
     </ul>
   </nav>
 </div>
+</section>
 
-<section align="center" style="background-color: #cccccc; color: white;">
-  <div class="grandpa" align="center">
+<section class="section-2" align="center"  style="background-color: #cccccc; color: white;">
+  <div class="grandpa" *ngIf="showBasic"  align="center">
       <div class="social-card">
           <div class="form-group">
-            <input type="text" class="form-group" [(ngModel)]="name">
-            <input type="text" class="form-group" [(ngModel)]="reply_email">
-            <input type="text" class="form-group" [(ngModel)]="message">
-            <button (click)="sendForm()">Enviar</button>
+            <h5>Nombre</h5>
+            <input type="text" class="form-control" [(ngModel)]="name">
+            <h5>Correo Electrionico</h5>
+            <input type="email" class="form-control" [(ngModel)]="reply_email" placeholder="correo@ejemplo.com">
+            <h5>Mensaje</h5>
+            <input type="text" class="form-control" [(ngModel)]="message"><hr />
+            <button type="submit" class="btn btn-success btn-lg" (click)="sendForm()">Enviar</button>
           </div>
         </div>
   </div>
 </section>
-
-
-
 
 <router-outlet></router-outlet>
