@@ -54,13 +54,13 @@
 
   </div>
 </div>
-<div class="chatSide animated fadeIn" style="height: 415px;" *ngIf="sendCotization">
+<div class="chatSide animated fadeIn" style="height: 435px;" *ngIf="sendCotization">
   <div class="information">
     <div class="row" align="center">
       <div class="col-md-12" style="margin-top: 10px;" align="center">
         <span style="font-weight: bolder;color: #400D45">Send Cotization</span>
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12" style="margin-top: 15px;">
         <label for="name" style="position: relative;right: 60px;font-weight: bolder;color: #400D45">Tipo de servicio</label>
         <select name="type" class="form-control"  id="type">
           <option value="0">Cortinados</option>
@@ -70,7 +70,7 @@
           <option value="4">Costura</option>
         </select>
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12" style="margin-top: 15px;">
         <label for="name" style="position: relative;right: 35px;font-weight: bolder;color: #400D45">Presupuesto Estimado</label>
         <input type="range" [(ngModel)]="range" class="custom-range" style="width: 80%;" min="0" max="100000" id="customRange2"><br>
          <span style="color: #400D45">{{range}}$</span>
