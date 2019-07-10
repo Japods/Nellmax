@@ -9,6 +9,7 @@ import { appService } from '../app/app.component.service';
 export class AppComponent {
 
   // tslint:disable-next-line: variable-name
+  public range = 0;
   public sendCotization: boolean = false;
   public sendEmail: boolean = false;
   public showBasic: boolean = false;
