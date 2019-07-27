@@ -119,14 +119,16 @@ export class AppComponent {
 
   sendForm() {
     this.template_params.name = this.name
-    this.template_params.reply_email = this.reply_email
+    this.template_params.reply_email = this.reply_email;
     this.template_params.message = this.message;
-    console.log("This template params", this.template_params)
+    console.log('This template params', this.template_params);
 
     this.appService.sendEmail(this.service_id, this.template_id, this.user_id, this.template_params).subscribe(response => {
-      console.log("Response", response)
-    })
+      console.log('Response', response);
+    });
   }
+
+  
 
 
 }

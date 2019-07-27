@@ -2,6 +2,41 @@
   height: calc(100vh - 70px);
 }
 
+.ir-arriba{
+  padding: 15px;
+  background: #400D45;
+  color: white;
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 30px;
+  position: fixed;
+  border: solid 1px white;
+  cursor: pointer;
+  bottom: 20px;
+  left: 20px;
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+.ir-arriba:hover{
+  color: white;
+  border: solid 1.5px #dc18cf;
+  text-align: justify;
+  transition: border 0.15s;
+}
+
+.ir-arriba:active{
+  transform: scale(0.92);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .ir-arriba{
+    padding: 15px;
+    border-radius: 50px;
+  }
+}
+
+
 .navbar {
   overflow: hidden;
   width: 100%;
@@ -150,6 +185,18 @@ li:hover {
   background-color: #400D45;
   color: white
 }
+
+#msnToggle:hover{
+  color: #6f1278;
+  border: solid 1.5px #dc18cf;
+  text-align: justify;
+  transition: border 0.15s;
+}
+
+#msnToggle:active{
+  transform: scale(0.92);
+}
+
 #cotizationToggle {
   border: solid 1px white;
   position: fixed;
@@ -163,6 +210,17 @@ li:hover {
   cursor: pointer;
   background-color: #400D45;
   color: white
+}
+
+#cotizationToggle:hover{
+  color: #6f1278;
+  border: solid 1.5px #dc18cf;
+  text-align: justify;
+  transition: border 0.15s;
+}
+
+#cotizationToggle:active{
+  transform: scale(0.92);
 }
 
 .chatSide{
