@@ -2,18 +2,26 @@
   height: calc(100vh - 70px);
 }
 
+.carrousel-text-aling {
+  text-align: center;
+  text-shadow: 2px 2px black;
+  margin-bottom: 40px;
+  font-size: 20px;
+  position: absolute;
+}
+
 .ir-arriba{
   padding: 15px;
   background: #400D45;
   color: white;
   border-radius: 30px;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 27px;
   position: fixed;
   border: solid 1px white;
   cursor: pointer;
   bottom: 20px;
-  left: 20px;
+  left: 55em;
   overflow-x: hidden;
   z-index: 100;
 }
@@ -111,9 +119,6 @@ section h4 {
 .form-control{
   width: 80%;
 }
-
-
-
 
 .col5 {
   width: calc(100% / 5);
